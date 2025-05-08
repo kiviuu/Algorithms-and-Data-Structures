@@ -1,0 +1,13 @@
+ Układ planetarny Algon składa się z n planet o numerach od 0 do n−1. Niestety własności fizyczne
+ układu powodują, że nie da się łatwo przelecieć między dowolnymi dwiema planetami. Na szczęście
+ mozolna eksploracja kosmosu doprowadziła do stworzenia listy E dopuszczalnych bezpośrednich
+ przelotów. Każdy element listy E to trójka postaci (u,v,t), gdzie u i v to numery planet (można
+ założyć, że u < v) a t to czas podróży między nimi (przelot z u do v trwa tyle samo co z v do u).
+ Dodatkową nietypową własnością układu Algon jest to, że niektóre planety znajdują się w okolicy
+ osobliwości. Znajdując się przy takiej planecie możliwe jest zagięcie czasoprzestrzeni umożliwiające
+ przedostanie się do dowolnej innej planety leżącej przy osobliwości w czasie zerowym.
+ Zadanie polega na zaimplementowaniu funkcji:
+ def spacetravel( n, E, S, a, b )
+ która zwraca najkrótszy czas podróży z planety a do planety b, mając do dyspozycji listę możliwych
+ bezpośrednich przelotów E oraz listę S planet znajdujących się koło osobliwości. Jeśli trasa nie
+ istnieje, to funkcja powinna zwrócić None.
