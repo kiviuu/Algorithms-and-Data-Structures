@@ -1,0 +1,15 @@
+ Dobrycerz (czyli rycerz, który zawsze uprzejmie mówi “dzień dobry”) chce się przedostać z zamku s
+ do zamkut.Mapazamkówdanajestwpostacigrafu nieskierowanego G, gdzie każda krawędź ma wagę
+ oznaczającą ile godzin potrzeba, żeby ją przebyć. Wagi to liczby naturalne ze zbioru {1,2,...,8}.
+ Po najdalej 16 godzinach podróży Dobrycerz musi nocować w zamku. Warunki uprzejmości wymagają,
+ żeby spędził w takim zamku 8 godzin (przejazd przez zamki, w których nie nocuje nie
+ kosztuje dodatkowego czasu; szybko mówi “dzień dobry” strażnikom i jedzie dalej). Mapa z której
+ korzysta Dobrycerz ma to do siebie, że liczba dróg jest proporcjonalna do liczby zamków. Czyli jeśli
+ zamków jest n, to wiadomo, że dróg jest O(n).
+ Zadanie polega na implementacji funkcji:
+ goodknight( G, s, t )
+ która na wejściu otrzymuje graf opisujący mapę zamków, reprezentowany w postaci macierzy sąsiedztwa
+ (czyli G[i][j] to liczba godzin, konieczna do przejechania bezpośrednio z zamku i do
+ zamku j; w przypadku braku drogi G[i][j] = −1), zamek startowy s oraz zamek docelowy t, i
+ zwraca minimalny czas (wyrażony w godzinach) potrzebny na przejazd z s do t (Dobrycerz nigdy
+ nie musi nocować ani w zamku s ani w zamku t). Można założyć, że zawsze istnieje trasa z zamku s do t
