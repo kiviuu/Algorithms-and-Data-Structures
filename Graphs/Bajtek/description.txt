@@ -1,0 +1,13 @@
+Bajtek musi wykonać w trakcie semestru n projektów: p0,p1,...,pn−1. Wykonanie każdego
+ projektu trwa jedną jednostkę czasu. Co więcej, Bajtek ma bardzo podzielną uwagę: może
+ wykonywać równocześnie dowolnie wiele projektów (ich równoczesna realizacja wciąż trwa
+ jedną jednostkę czasu). Niestety, realizacja niektórych projektów musi być poprzedzona wykonaniem
+ pewnych innych. Bajtek zastanawia się więc, ile czasu zajmie realizacja wszystkich projektów.
+ Zaproponuj i zaimplementuj algorytm, który wyliczy minimalną liczbę jednostek czasu w której
+ możliwe jest wykonanie wszystkich n projektów. Algorytm należy zaimplementować jako funkcję
+ projects(n, L), której pierwszym argumentem jest liczba projektów a drugim argumentem jest
+ lista zależności. Każdy element listy L to krotka postaci (p, q) wskazująca, że projekt numer
+ p ∈ {0,...,n−1} można rozpocząć dopiero po wykonaniu projektu numer q ∈ {0,...,n−1}. Można
+ założyć, że istnieje taka kolejność wykonywania projektów, w których spełnione są wszystkie 
+ narzucone zależności. Zaproponowany algorytm powinien być możliwe jak najszybszy. Oszacuj jego
+ złożoność obliczeniową.
