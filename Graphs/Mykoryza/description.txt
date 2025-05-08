@@ -1,0 +1,14 @@
+ Planeta Pandora jest porośnięta lasem deszczowym posiadającym rozległy system korzeni. System
+ korzeniowy obejmujący cały las stanowi graf, którego wierzchołki reprezentują drzewa, mogące
+ łączyć się systemami korzeniowymi z innymi drzewami, co jest reprezentowane przez krawędzie
+ grafu. Aby zbadać system korzeni wybrano 𝑘 drzew i wszczepiono im 𝑘 różnych gatunków grzyba
+ numerowanych od 0 do 𝑘 − 1. W jednostce czasu grzyb rozrasta się z drzewa na wszystkie z którymi
+ bezpośrednio łączy się korzeniami. Jeśli dwa lub więcej gatunków grzyba docierają do drzewa
+ w tej samej jednostce czasu, „wygrywa” ten z najmniejszym indeksem. Proszę zaproponować i
+ zaimplementować algorytm wyznaczający ile drzew docelowo zostanie opanowanych przez grzyb o
+ numerze 𝑑.
+ Algorytm należy zaimplementować jako funkcję mykoryza(G, T, d), której argumentami są:
+ • graf G w postaci list sąsiadów opisujący system korzeni,
+ • tablica T zawierająca numery drzew, którym wszczepiono grzyby,
+ • d numer grzyba.
+ Funkcja powinna zwrócić liczbę drzew opanowanych przez grzyb numer 𝑑.
