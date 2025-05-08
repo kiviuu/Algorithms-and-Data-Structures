@@ -1,0 +1,14 @@
+ Dany jest ważony, nieskierowany graf G = (V,E), którego wagi krawędzi opisuje funkcja w∶E → N.
+ Wiadomo, że wagi krawędzi są parami różne. Niech T będzie pewnym drzewem rozpinającym G,
+ mbędzie najmniejszą wagą krawędzi z T a M będzie największą wagą krawędzi z T. Mówimy, że
+ T jest piękne jeśli każda krawędź spoza T albo ma wagę mniejszą niż m albo większą niż M. Wagą
+ drzewa rozpinającego jest suma wag jego krawędzi. Zadanie polega na implementacji funkcji:
+ beautree( G )
+ która na wejściu otrzymuje graf reprezentowany w postaci listowej i zwraca wagę najlżejszego pięknego
+ drzewa rozpinającego G lub None jeśli takie drzewo nie istnieje. Użyty algorytm powinien być
+ możliwie jak najszybszy. Proszę uzasadnić poprawność zaproponowanego algorytmu oraz oszacować
+ jego złożoność czasową i pamięciową.
+ Reprezentacja grafu. Niech G będzie argumentem funkcji beautree. Graf G ma wierzchołki o
+ numerach od 0 do n−1, gdzie: n = len(G)
+ Dla danego wierzchołka i, G[i] to lista par postaci (j,w), gdzi j to numer wierzchołka do którego
+ prowadzi krawędź z i a w to jej waga.
