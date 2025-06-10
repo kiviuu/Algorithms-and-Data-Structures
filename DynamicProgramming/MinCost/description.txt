@@ -1,0 +1,32 @@
+Kierowca ciężarówki przewozi towary z miasta A do miasta B. W pewnych miejscach trasy prze
+jazdu znajdują sit;'. parkingi. Przejeżdżając obok parkingu kierowca może (ale nie musi) się na nim 
+zatrzymać i odpocząć. Przepisy transportowe narzucają jednak pewne ograniczenia związane z 
+bezpieczeństwem: 
+l. Maksymalna liczba kilometrów, którą można przejechać bez zatrzymania wynosi T. Od zasady 
+tej istnieje jeden wyjątek, opisany w punkcie 2. 
+2. W trakcie całego przejazdu z A do B kierowca może jeden raz przekroczyć limit T kilo
+metrów jazdy bez zatrzymania. Może wówczas przejechać nie więcej niż 2T kilometrów bez 
+zatrzymania. 
+Niestety, parkingi na trasie są płatne. Co więcej, opiaty za postój różnią się pomiędzy parkin
+gami. Kierowca musi więc wybrać miejsca postoju w taki sposób, by przejechać trasę zgodnie z 
+obowiązującymi przepisami i równocześnie zapłacić możliwie jak najmniej za postoje. 
+Zaproponuj i zaimplementuj algorytm, który wylicza minimalny koszt przejechania z miasta 
+A do miasta B zgodnie z opisanymi przepisami transportu towarów. Koszt przejazdu z A do B 
+definiujemy jako sumę opiat za parkowanie w miejscach, w których kierowca si~ zatrzymał (nic 
+liczymy ceny paliwa; nie bierzemy pod uwagę czasu postoju na parkingu). W miastach A i B oplata 
+nie jest pobierana. Uzasadnij poprawność zaproponowanego algorytmu i oszacuj jego złożoność 
+obliczeniową. 
+Algorytm należy zaimplementować jako funkcję: 
+def min_cost( O, C, T, L) 
+Argumentami funkcji są: 
+• Tablica O zawierająca pozycje parkingów na trasie z A do B. O [i] to liczba kilometrów 
+(wzdłuż trasy przejazdu) od A do i-tego parkingu. 
+• Tablica C zawierająca ceny za postój na poszczególnych parkingach. C [i] to oplata za za
+trzymanie na i-tym parkingu. 
+• Maksymalna liczba kilometrów T, którą można przejechać bez zatrzymywania (z zastrzeże
+ niem wyjątku opisanego powyżej). 
+• Długość L trasy (liczba kilometrów od A do B wzdłuż trasy przejazdu). 
+Wszystkie wartości przekazane w tablicach O i Coraz argumenty Ti L to dodatnie liczby naturalne. 
+Tablice nie muszą być posortowane. Funkcja min_cost powinna zwrócić jed1u1 liczbę nat.urnlną: 
+minimalny koszt przejazdu z A do B. Można założyć, że parkingi są tuk rozmieszczone, że da 
+się przejechać z A do B zgodnie z obowiązującymi zasadami. 
