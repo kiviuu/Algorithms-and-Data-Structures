@@ -1,3 +1,7 @@
+"""
+Solution: same strategy as in the task named armstrong
+"""
+
 from egz1Atesty import runtests
 from queue import PriorityQueue
 
