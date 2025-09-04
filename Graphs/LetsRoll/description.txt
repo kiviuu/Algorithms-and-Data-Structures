@@ -1,0 +1,18 @@
+Stary Kontynent składa się z miast ponumerowanych od 0 do V - 1, pomiędzy którymi istnieje
+sieć połączeń lotniczych. W niektórych miastach znajdują się ośrodki wypoczynkowe. Grzegorz
+postanowił odwiedzić wszystkie te ośrodki - po jednym podczas każdej podróży.
+Grzegorz rozpoczyna każdą podróż w swoim mieście rodzinnym. Korzystając z siatki połączeń
+między miastami, pośrednio lub bezpośrednio trafia do wybranego ośrodka, a następnie wraca
+lotami powrotnymi po tej samej trasie. Połączenia lotnicze między miastami są dwukierunkowe i
+mają przypisany z góry określony dodatni koszt - cena biletu jest identyczna w obu kierunkach.
+Koszt pokonania całej trasy jest równy sumie cen biletów za poszczególne loty na trasie. Aby nie
+popaść w rutynę, wyznaczając trasę do danego ośrodka, Grzegorz nigdy nie chce, aby przebiegała
+ona przez miasta, w których są odwiedzone już wcześniej ośrodki. Grzegorz jest jednak oszczędny
+i zawsze wybierze możliwie najtańszą pod względem kosztu trasę spełniającą te wymagania.
+Na cel pierwszej podróży Grzegorz wybiera ośrodek, do którego koszt podróży jest najniższy.
+Po każdej kolejnej podróży jako następny cel wybiera nieodwiedzony jeszcze ośrodek, do którego
+prowadzi najtańsza możliwa trasa, która nie przebiega przez miasta z odwiedzonymi już ośrodkami.
+Jeśli istnieje kilka ośrodków o jednakowym, najniższym koszcie, Grzegorz wybiera ten o najniższym
+indeksie. Czynność tę powtarza dopóki nie odwiedzi wszystkich ośrodków, lub gdy dotarcie do
+nieodwiedzonych jeszcze ośrodków nie będzie możliwe (na przykład dlatego, że wszystkie możliwe
+trasy do nieodwiedzonych ośrodków będą prowadziły przez ośrodki już odwiedzone).
