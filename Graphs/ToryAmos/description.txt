@@ -1,0 +1,18 @@
+Bajtocja to bardzo bogaty kraj. Pracują w niej inżynierowie z całego świata. Niestety, rodzi to
+czasem problemy. Okazuje się na przykład, że część linii kolejowych w Bajtocji ma indyjski rozstaw
+szyn (1676 mm) a reszta ma rozstaw przylądkowy (1067 mm). Główny Rozkładowy, inżynier Armin
+Mos, ma za zadanie zaplanować najkrótszą trasę ze stacji A do stacji B. Po drodze pociąg będzie
+potencjalnie musiał przejechać przez pewne inne stacje. Jeśli pociąg wjeżdża na stację i wyjeżdża z
+niej linią indyjską to przejazd zajmuje 5 jednostek czasu. Wjazd i wyjazd linią przylądkową zajmuje
+10 jednostek czasu. Jeśli natomiast na stacji trzeba zmienić rozstaw kół to przejazd zajmuje 20
+jednostek czasu. Pomiędzy stacjami pociąg jedzie z prędkością jednego kilometra na jednostkę
+czasu. Odległości pomiędzy stacjami to dodatnie liczby naturalne nie większe niż 10 kilometrów.
+Ruszając ze stacji A pociąg ma dopasowany rozkład kół do pierwszej linii, którą się porusza.
+Proszę zaimplementować funkcję tory_amos(E, A, B), która otrzymuje na wejściu opis linii
+kolejowych E, numer stacji początkowej A oraz numer stacji końcowej B i zwraca najkrótszy możliwy
+czas przejazdu z A do B. Opis linii kolejowych to lista krotek postaci (x, y, d, typ), gdzie x i y
+to numery stacji połączonych linią kolejową, d ∈ {1, …, 10} to długość linii zaś typ to jej rozstaw.
+Jeśli typ == 'I' to linia ma rozstaw indyjski. Jeśli typ == 'P' to linia ma rozstaw przylądkowy.
+Każda linia kolejowa jest dwukierunkowa (ma tor w kierunku x->y i tor w kierunku y->x). Może
+się zdarzyć, że pewne stacje są połączone zarówno linią indyjską jak i linią przylądkową. Stacje
+numerowane są od 0.
