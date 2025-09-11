@@ -1,0 +1,8 @@
+Bitocja i Bajtocja tworzą wspólny spektakl—inscenizację wielkiej BITwy BITowej między tymi krajami. W ramach inscenizacji Bitocja rozstawiła n katapult na pozycjach ko, . . . , kn -i,
+a Bajtocja rozstawiła m procesorów na pozycjach po, ■. . ,Pm-l- Podczas spektaklu katapulty będą strzelać do procesorów. Reżyser wprowadził jednak pewne ograniczenia: 1. 
+Każda katapulta może strzelać wyłącznie do przodu (czyli w kierunku pozycji większych niż jej własna) i ma ograniczony zasięg. Zasięgi katapult dane są jako liczby ro, . . . , rn-i, 
+po jednej dla każdej katapulty. 2. Strzały z katapult nie mogą się krzyżować. Przykładowo, jeśli katapulta na pozycji 5 strzela do procesora na pozycji 10 to katapulta na pozycji 2 nie może 
+strzelać do procesora na pozycji 7. 3. Do jednego procesora może strzelać tylko jedna katapulta. Nie jest wymagane, żeby wszystkie katapulty strzelały. Proszę zaimplementować funkcję battle (P,K,R), 
+która przyjmuje listę pozycji procesorów (P), listę pozycji katapult (K), oraz listę zasięgów katapult (R) i zwraca maksymalną liczbę procesorów, do których mogą strzelać katapulty. 
+Wejściowe listy nie są posortowane, ale wiadomo że pozycje katapult i procesorów są nieujemne i nie przekraczają liczby 4n + 4m. Żadne dwa obiekty (katapulty lub procesory) nie znajdują się na 
+tej samej pozycji. Algorytm powinien być możliwie jak najszybszy. Proszę uzasadnić poprawność zaproponowanego algorytmu oraz oszacować jego złożoność czasową i pamięciową.
